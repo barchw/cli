@@ -17,7 +17,7 @@ func TestOptsValidation(t *testing.T) {
 		require.Contains(t, err.Error(), "unknown profile: fancy")
 	})
 
-	t.Run("supported profiles", func(t *testing.T) {
+	t.Run("supported s", func(t *testing.T) {
 		profiles := []string{"", "evaluation", "production"}
 		for _, p := range profiles {
 			opts := Options{Profile: p}

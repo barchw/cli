@@ -21,6 +21,7 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/restmapper"
 	"k8s.io/client-go/tools/clientcmd/api"
+	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
 
 	istio "istio.io/client-go/pkg/clientset/versioned"
 	"k8s.io/apimachinery/pkg/api/meta"

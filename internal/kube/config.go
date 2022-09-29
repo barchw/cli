@@ -4,6 +4,7 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/tools/clientcmd/api"
+	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
 )
 
 // restConfig loads the rest configuration needed by k8s clients to interact with clusters based on the kubeconfig.
